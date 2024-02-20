@@ -1,0 +1,20 @@
+.radio-section {
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.radio-input {
+    margin:15px;
+    accent-color: black;
+    display:flex;
+}
+
+.radio-input input {
+    margin:0px 30px;
+    width:20px;
+}
+
+.radio-input label {
+    font-size:2em;
+}

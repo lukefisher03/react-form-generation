@@ -12,8 +12,8 @@ export const RadioGroup = ({ r }) => {
         styles.alignItems = "start"
     }
 
-    r.items.forEach((i) => {
-        radioGroup.push(<div className="radio-input"><input type="radio" id={i.id} name={r.name} /><label htmlFor={i.id}>{i.labelText}</label></div>)
+    r.items.forEach((i, index) => {
+        radioGroup.push(<div className="radio-input" key={i.id} ><input type="radio" id={i.id} name={r.name} /><label htmlFor={i.id}>{i.labelText}</label></div>)
 
     })
     return (

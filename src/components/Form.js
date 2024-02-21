@@ -2,6 +2,7 @@ import "./Form.css"
 import { useState } from "react"
 import { SelectBoxGroup } from "./FormComponents/SelectBoxGroup"
 import { TextboxGroup } from "./FormComponents/Textbox"
+import { DropdownGroup } from "./FormComponents/DropdownGroup"
 
 export const selectBoxGroupData = {
     groupName: "group1",
@@ -55,7 +56,8 @@ export const Form = () => {
         <>
                 <form id="form-container">
                     {/* <TextboxGroup t={textboxGroup}/> */}
-                    <SelectBoxGroup b={selectBoxGroupData}/>
+                    {/* <SelectBoxGroup b={selectBoxGroupData}/> */}
+                    <DropdownGroup/>
                 </form>
                     <button id="next-btn" className="solid-btn">NEXT</button>
         </>

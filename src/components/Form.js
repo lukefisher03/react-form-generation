@@ -1,19 +1,19 @@
 import "./Form.css"
 import { useState } from "react"
-import { RadioGroup } from "./FormComponents/RadioGroup"
+import { SelectBoxGroup } from "./FormComponents/SelectBoxGroup"
 import { TextboxGroup } from "./FormComponents/Textbox"
 
-export const radioGroupData = {
-    name: "visual-or-verbal",
-    vertical: true,
+export const selectBoxGroupData = {
+    groupName: "group1",
+    type: "checkbox",
     items: [
         {
             id: "red",
-            labelText: "I pick red"
+            labelText: "I have read"
         },
         {
             id: "blue",
-            labelText: "I pick blue"
+            labelText: "I accept any"
         },
         {
             id:"green",
@@ -54,8 +54,8 @@ export const Form = () => {
     return (
         <>
                 <form id="form-container">
-                    <TextboxGroup t={textboxGroup}/>
-                    {/* <RadioGroup r={radioGroupData}/> */}
+                    {/* <TextboxGroup t={textboxGroup}/> */}
+                    <SelectBoxGroup b={selectBoxGroupData}/>
                 </form>
                     <button id="next-btn" className="solid-btn">NEXT</button>
         </>

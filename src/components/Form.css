@@ -15,16 +15,19 @@ form {
     max-width:80%;
 }
 
-button {
-    position:absolute;
-    right:0px;
-    bottom:0px;
-    margin:50px 100px;
+.solid-btn {
     padding:20px 35px;
     border:2px solid black;
     color:white;
     background:black;
     border-radius: 5px;
+}
+
+#next-btn {
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    margin:50px 100px;
 }
 
 button:hover {

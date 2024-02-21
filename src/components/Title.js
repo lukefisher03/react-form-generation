@@ -7,6 +7,7 @@ export const Title = ({titleText, descriptionText}) => {
                 <h1>{titleText}</h1>
                 <p>{descriptionText}</p>
             </div>
+            <button id="back-btn" className="underlined-btn">Back</button>
         </div>
     )
 }

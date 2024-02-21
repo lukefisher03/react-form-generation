@@ -44,7 +44,7 @@ export const textboxGroup = {
         { 
             name:"question3",
             labelText: "This a test question",
-            type: "textarea",
+            type: "text",
             placeholder: "testing placeholder"
         },
     ]
@@ -53,12 +53,11 @@ export const textboxGroup = {
 export const Form = () => {
     return (
         <>
-            <div id="form-container">
-                <form>
+                <form id="form-container">
                     <TextboxGroup t={textboxGroup}/>
+                    {/* <RadioGroup r={radioGroupData}/> */}
                 </form>
-                    <button>NEXT</button>
-            </div>
+                    <button id="next-btn" className="solid-btn">NEXT</button>
         </>
     )
 }

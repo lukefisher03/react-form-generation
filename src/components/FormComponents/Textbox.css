@@ -1,6 +1,6 @@
 #text-container {
-    width:80%;
-    max-width: 80%;
+    width:50%;
+    max-width: 100%;
 }
 .text-input-item-container {
     display:flex;
@@ -20,11 +20,8 @@
     padding:10px;
 }
 
-.text-input-item-container input {
-    /* max-width: 50%; */
-}
-
 .text-input-item-container textarea {
     flex: 4 4 0;
     width: 100%;
+    max-width: 100%;
 }

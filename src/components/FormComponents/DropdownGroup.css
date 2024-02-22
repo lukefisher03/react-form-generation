@@ -2,6 +2,7 @@
     min-width: 150px;
     margin: 20px;
     /* position:relative; */
+    box-sizing: border-box;
 }
 
 .dropdown-btn {

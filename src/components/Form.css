@@ -1,25 +1,25 @@
 #form-container {
-    display:flex;
-    height:100%;
-    background:#f3f3f3;
+    display: flex;
+    height: 100%;
+    background: #f3f3f3;
     min-height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding:0 0 50px 0;
+    padding: 0 0 50px 0;
 }
 
 form {
     flex-grow: 1;
-    display:flex;
+    display: flex;
     align-items: center;
 }
 
 .solid-btn {
-    border:none;
-    padding:10px 25px;
-    color:rgb(255, 255, 255);
-    background:black;
+    border: none;
+    padding: 10px 25px;
+    color: rgb(255, 255, 255);
+    background: black;
     border-radius: 5px;
     transition-duration: 0.08s;
     transition-delay: 0.05s;
@@ -27,18 +27,18 @@ form {
 }
 
 .solid-btn:hover {
-    color:black;
-    outline:2px solid black;
+    color: black;
+    outline: 2px solid black;
     background-color: #f3f3f3;
 }
 
 #next-btn {
-    position:fixed;
-    right:0px;
-    bottom:0px;
-    margin:50px 100px;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    margin: 50px 100px;
 }
 
 button:hover {
-    cursor:pointer;
+    cursor: pointer;
 }

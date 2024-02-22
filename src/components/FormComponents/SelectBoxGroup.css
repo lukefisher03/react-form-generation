@@ -1,25 +1,25 @@
 .radio-section {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-evenly;
-    width:55%;
+    width: 55%;
     flex-wrap: wrap;
-    border:3px solid #d0d0d0;
-    border-radius:5px;
-    margin:20px 0;
+    border: 3px solid #d0d0d0;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
 .radio-input {
-    margin:15px;
+    margin: 15px;
     accent-color: black;
-    display:flex;
+    display: flex;
 }
 
 .radio-input input {
-    margin:0px 30px;
-    width:20px;
+    margin: 0px 30px;
+    width: 20px;
 }
 
 .radio-input label {
-    font-size:1em;
+    font-size: 1em;
 }

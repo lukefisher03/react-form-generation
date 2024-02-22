@@ -25,7 +25,7 @@ export const SelectBoxGroup = ({ b }) => {
     }
 
     b.items.forEach((i) => {
-        radioGroup.push(<div className="radio-input" key={i.id} ><input type={b.type} id={i.id} name={b.groupName} /><label htmlFor={i.id}>{i.labelText}</label></div>)
+        radioGroup.push(<div className="radio-input" key={i.id} ><input type={b.type} id={`${b.groupName}-${i.id}`} name={b.groupName} /><label htmlFor={`${b.groupName}-${i.id}`}>{i.labelText}</label></div>)
 
     })
     return (

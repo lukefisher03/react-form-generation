@@ -47,33 +47,38 @@ export const DropdownGroup = ({ d }) => {
 
     d.items.forEach((item, index) => {
         elements.push(
-            <div className="dropdown-item-container" key={item.name}>
-                <label htmlFor="">{item.label}</label>
-                <button
-                    className="dropdown-btn"
-                    onClick={(e) => showOptions(index, e)}
-                >
-                    {dropdownTitles[index]}
-                    <span className="down-arrow"></span>
-                </button>
-                <div
-                    className="dropdown-options-container"
-                    style={{ display: openClose[index] }}
-                >
-                    {item.options.map((e, i) => (
-                        <a onClick={() => setTitle(e, index)} key={i}>
-                            {e}
-                        </a>
-                    ))}
+            <div className="dropdown-container">
+                <label htmlFor={item.name}>{item.label}</label>
+                <div className="dropdown-item-container" key={item.name}>
+                    <button
+                        id={item.name}
+                        className="dropdown-btn"
+                        onClick={(e) => showOptions(index, e)}
+                    >
+                        <span>{dropdownTitles[index]}</span>
+                        <span className="down-arrow"></span>
+                    </button>
+                    <div
+                        className="dropdown-options-container"
+                        style={{ display: openClose[index] }}
+                    >
+                        {item.options.map((e, i) => (
+                            <a onClick={() => setTitle(e, index)} key={i}>
+                                {e}
+                            </a>
+                        ))}
+                    </div>
                 </div>
             </div>
         );
     });
 
-    return <div className="dropdown-container">{elements}</div>;
+    return <div className="dropdown-group-container">{elements}</div>;
 };
 
-export const validateDropdownGroup = (g) => { /* TODO */};
+export const validateDropdownGroup = (g) => {
+    /* TODO */
+};
 
 export const sanitizeDropdownGroup = (g) => {
     g.items.forEach((item) => {

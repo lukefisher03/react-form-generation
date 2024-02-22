@@ -1,6 +1,9 @@
 #text-container {
     width:55%;
     max-width: 100%;
+    border-radius: 5px;
+    border:3px solid #d0d0d0;
+    margin:20px;
 }
 .text-input-item-container {
     display:flex;

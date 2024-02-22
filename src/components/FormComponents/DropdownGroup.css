@@ -1,29 +1,43 @@
 .dropdown-item-container {
-    min-width: 150px;
-    margin: 20px;
+    min-width: 200px;
     /* position:relative; */
     box-sizing: border-box;
+}
+.dropdown-group-container {
+    width:55%;
+    border:3px solid #d0d0d0;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.dropdown-container {
+    display:flex;
+    /* flex-direction: column; */
+    align-items: center;
+    padding:20px;
+    /* background: rgb(221, 221, 221); */
+    flex-wrap: wrap;
+}
+.dropdown-container label {
+    padding:15px;
 }
 
 .dropdown-btn {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 1em;
-    padding: 5px 20px;
-    padding-right: 10px;
-    background: none;
-    border: 2px solid black;
-    width: 100%;
+    width:100%;
+    justify-content: space-between;
+    background:white;
+    border: 2px solid rgb(211, 211, 211);
     border-radius: 4px;
+    padding:8px 20px;
 }
 
 .dropdown-btn .down-arrow {
+    display:block;
     content: "";
     width: 0;
     height: 0;
-    margin-left: 10px;
-    margin-top: 0.25em;
     border: 4px solid black;
     border-color: black transparent transparent transparent;
 }
@@ -39,30 +53,21 @@
 }
 
 .dropdown-options-container a {
+    box-sizing:border-box;
     color: black;
     min-width:150px;
     text-decoration: none;
     display: block;
-    padding: 5px 15px;
+    padding: 10px 15px;
+    background: white;
+    transition-duration: 0.2s;
+    border-left:3px solid #ffffff;
 }
 
-.dropdown-options-container a:nth-child(even) {
-    background-color: rgb(227, 227, 227);
-}
 
-.dropdown-options-container a:nth-child(odd) {
-    background-color: rgb(188, 188, 188);
-}
-
-/* .dropdown-options-container a:last-child {
-    border-radius: 0 0 5px 5px;
-}
-
-.dropdown-options-container a:first-child {
-    border-radius: 5px 5px 0 0;
-} */
 
 .dropdown-options-container a:hover {
-    background-color: #343434;
-    color: white;
+    border-left:3px solid #212121;
+    color: rgb(17, 17, 17);
+    cursor:pointer;
 }

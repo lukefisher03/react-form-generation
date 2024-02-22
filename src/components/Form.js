@@ -27,6 +27,29 @@ export const selectBoxGroupData = {
     ]
 }
 
+export const selectBoxGroupData1 = {
+    groupName: "group2",
+    type: "checkbox",
+    items: [
+        {
+            id: "red",
+            labelText: "I have read"
+        },
+        {
+            id: "blue",
+            labelText: "I accept any"
+        },
+        {
+            id:"green",
+            labelText: "I pick green"
+        },
+        {
+            id:"violet",
+            labelText: "I pick violet"
+        }
+    ]
+}
+
 export const textboxGroup = {
     groupName:"TextBoxGroup1",
     items: [
@@ -56,7 +79,7 @@ export const dropdownGroup = {
     items: [
         {
             name:"dropdown1",
-            // default: "Select one",
+            // default: "What's your opinion?",
             label: "Dropdown 1", 
             options : [
                 "Option 1",
@@ -73,7 +96,27 @@ export const dropdownGroup = {
                 "Box 2 Option 2",
                 "Box 2 Option 3"
             ]
-        }
+        },
+        // {
+        //     name:"dropdown2",
+        //     label:"Dropdown 2",
+        //     // default: "Select one",
+        //     options : [
+        //         "Box 2 Option 1",
+        //         "Box 2 Option 2",
+        //         "Box 2 Option 3"
+        //     ]
+        // },
+        // {
+        //     name:"dropdown2",
+        //     label:"Dropdown 2",
+        //     // default: "Select one",
+        //     options : [
+        //         "Box 2 Option 1",
+        //         "Box 2 Option 2",
+        //         "Box 2 Option 3"
+        //     ]
+        // }
     ]
 }
 
@@ -81,8 +124,11 @@ export const Form = () => {
     return (
         <>
                 <form id="form-container">
-                    {/* <TextboxGroup t={textboxGroup}/> */}
-                    {/* <SelectBoxGroup b={selectBoxGroupData}/> */}
+                    <TextboxGroup t={textboxGroup}/>
+                    <SelectBoxGroup b={selectBoxGroupData}/>
+                    <DropdownGroup d={dropdownGroup}/>
+
+                    <SelectBoxGroup b={selectBoxGroupData1}/>
                     <DropdownGroup d={dropdownGroup}/>
                 </form>
                     <button id="next-btn" className="solid-btn">NEXT</button>

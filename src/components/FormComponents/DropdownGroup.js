@@ -47,7 +47,7 @@ export const DropdownGroup = ({ d }) => {
 
   d.items.forEach((item, index) => {
     elements.push(
-      <div className="dropdown-container">
+      <div className="dropdown-container" key={item.name}>
         <label htmlFor={item.name}>{item.label}</label>
         <div className="dropdown-item-container" key={item.name}>
           <button

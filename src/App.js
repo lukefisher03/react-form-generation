@@ -1,8 +1,23 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import { Form } from "./components/Form";
 import { Title } from "./components/Title";
+import YAML from "yaml";
 
 function App() {
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    fetch("/form")
+      .then((res) => {
+        return res.text()
+      }).then((d) => {
+        console.log(d)
+      }).catch((e) => {
+        console.log("Error!")
+        console.log(e)
+      })
+  }, []);
   return (
     <>
       <div id="content-container">

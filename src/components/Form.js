@@ -51,13 +51,39 @@ export const textboxGroup = {
     ]
 }
 
+export const dropdownGroup = {
+    groupName: "dropdownGroup",
+    items: [
+        {
+            name:"dropdown1",
+            // default: "Select one",
+            label: "Dropdown 1", 
+            options : [
+                "Option 1",
+                "Option 2",
+                "Option 3"
+            ]
+        },
+        {
+            name:"dropdown2",
+            label:"Dropdown 2",
+            // default: "Select one",
+            options : [
+                "Box 2 Option 1",
+                "Box 2 Option 2",
+                "Box 2 Option 3"
+            ]
+        }
+    ]
+}
+
 export const Form = () => {
     return (
         <>
                 <form id="form-container">
                     {/* <TextboxGroup t={textboxGroup}/> */}
                     {/* <SelectBoxGroup b={selectBoxGroupData}/> */}
-                    <DropdownGroup/>
+                    <DropdownGroup d={dropdownGroup}/>
                 </form>
                     <button id="next-btn" className="solid-btn">NEXT</button>
         </>

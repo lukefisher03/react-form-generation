@@ -1,0 +1,36 @@
+---
+formName: My Form
+pages:
+- title: Page title
+  description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim voluptatum
+    aspernatur amet blanditiis repellendus excepturi quasi? Illo, laboriosam. Aut
+    perspiciatis expedita, qui voluptatem dolore cum accusamus placeat tempora ratione
+    temporibus.
+  sections:
+  - - groupType: select
+      groupName: group1
+      type: checkbox
+      items:
+      - id: red
+        labelText: I have read
+      - id: blue
+        labelText: I accept any
+      - id: green
+        labelText: I pick green
+      - id: violet
+        labelText: I pick violet
+    - groupType: textbox
+      groupName: TextBoxGroup1
+      items:
+      - name: question1
+        labelText: This a test question
+        type: textarea
+        placeholder: testing placeholder
+      - name: question2
+        labelText: This a test question
+        type: text
+        placeholder: testing placeholder
+      - name: question3
+        labelText: This a test question
+        type: text
+        placeholder: testing placeholder

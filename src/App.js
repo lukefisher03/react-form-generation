@@ -2,9 +2,8 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import { Form } from "./components/Form";
 import { Title } from "./components/Title";
-import YAML from "yaml";
 
-function App() {
+export function App() {
   const [message, setMessage] = useState("");
 
   useEffect(() => {
